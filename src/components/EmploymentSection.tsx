@@ -4,11 +4,11 @@ import ResumeEntryHeading from "./base/ResumeEntryHeading";
 import ResumeList from "./base/ResumeList";
 import ResumeSection from "./base/ResumeSection";
 
-interface IEmploymentProps {
+interface IEmploymentSectionProps {
     employment: IEmployment[]
 }
 
-export default function EmploymentSection({employment}: IEmploymentProps) {
+export default function EmploymentSection({employment}: IEmploymentSectionProps) {
     return (
         <ResumeSection heading={"Employment"}>
             { employment.map((e: IEmployment) => 

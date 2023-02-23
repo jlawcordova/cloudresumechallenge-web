@@ -4,11 +4,11 @@ import ResumeEntryHeading from "./base//ResumeEntryHeading";
 import ResumeList from "./base/ResumeList";
 import ResumeSection from "./base/ResumeSection";
 
-interface IEducationProps {
+interface IEducationSectionProps {
     education: IEducation[];
 }
 
-export default function EducationSection({education}: IEducationProps) {
+export default function EducationSection({education}: IEducationSectionProps) {
     return (
         <ResumeSection heading={"Education"}>
             { education.map((e: IEducation) => 
