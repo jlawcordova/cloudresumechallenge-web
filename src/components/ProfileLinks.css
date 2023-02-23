@@ -1,0 +1,31 @@
+.profile-links {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-links span {
+    margin-bottom: 0.25rem;
+}
+
+.profile-links a {
+    margin-left: 0.5rem;
+    color: var(--font-color);
+    text-decoration: underline;
+    font-size: 0.85rem;
+}
+
+.profile-links span {
+    display: flex;
+    align-items: center;
+}
+
+.profile-links span .icon {
+    display: inline-flex;
+    width: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
