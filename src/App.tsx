@@ -2,6 +2,7 @@ import '@picocss/pico'
 import './App.css';
 import { IResume } from './interfaces/IResume';
 import Resume from './components/Resume';
+import ViewCount from './components/ViewCount';
 
 function App() {
   const resume: IResume = {
@@ -9,7 +10,7 @@ function App() {
     "tagline": "Full Stack Developer · Computer Engineer",
     "location": "8000 Davao City, Philippines",
     "skills": {
-      "languages": ["C#", "Python", "Javascript", "SQL"],
+      "languages": ["C#", "Python", "Javascript", "Typescript", "SQL"],
       "frameworks": ["ASP.NET Core", "Flask", "React", "NextJS", "Angular", "Ionic", "XUnit", "Storybook"],
       "tools": ["AWS", "Azure", "Linode", "Docker", "Kubernetes", "Gitlab CI/CD", "PostgreSQL"],
     },
@@ -75,6 +76,7 @@ function App() {
 
   return (
     <div className="App">
+      <ViewCount></ViewCount>
       <Resume resume={resume}></Resume>
     </div>
   );
