@@ -5,7 +5,7 @@ import Resume from './components/Resume';
 
 function App() {
   const resume: IResume = {
-    "name": "J. Law. Cordova",
+    "name": "Junel Lawrence Cordova",
     "tagline": "Full Stack Developer · Computer Engineer",
     "location": "8000 Davao City, Philippines",
     "skills": {
