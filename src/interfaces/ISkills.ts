@@ -1,5 +1,5 @@
 export default interface ISkills {
-    languages: string[];
-    frameworks: string[];
-    tools: string[];
+  languages: string[];
+  frameworks: string[];
+  tools: string[];
 }

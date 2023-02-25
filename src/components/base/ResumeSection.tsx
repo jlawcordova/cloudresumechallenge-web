@@ -6,12 +6,12 @@ interface IResumeSectionProps {
 }
 
 export default function ResumeSection({heading, children}: IResumeSectionProps) {
-    return (
-        <section>
-            <h2>{heading}</h2>
-            <div>
-                {children}
-            </div>
-        </section>
-    );
+  return (
+    <section>
+      <h2>{heading}</h2>
+      <div>
+        {children}
+      </div>
+    </section>
+  );
 }
