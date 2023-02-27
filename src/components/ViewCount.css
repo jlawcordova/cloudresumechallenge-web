@@ -1,10 +1,19 @@
 .view-count-container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    height: 1rem;
+    min-height: 1rem;
     text-align: right;
     font-size: 0.85rem;
 }
 
 .view-count {
     margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .view-count-container {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 }
