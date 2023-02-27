@@ -1,5 +1,5 @@
 header {
-    margin-top: 0.25rem;
+    margin-top: 1rem;
 }
 
 .resumer-header {
@@ -25,10 +25,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-    header {
-        margin-top: 1rem;
-    }
-    
     .resumer-header {
         flex-direction: row;
         justify-content: space-between;
