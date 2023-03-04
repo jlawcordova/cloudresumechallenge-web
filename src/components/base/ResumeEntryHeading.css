@@ -1,17 +1,17 @@
 .entry-heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: var(--typography-spacing-vertical);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: var(--typography-spacing-vertical);
 }
 
 .entry-subtitle {
-    color: var(--muted-color)
+  color: var(--muted-color);
 }
 
 @media (min-width: 768px) {
-    .entry-heading {
-        flex-direction: row;
-        margin-bottom: 0;
-    }
+  .entry-heading {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
 }

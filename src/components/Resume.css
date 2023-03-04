@@ -1,36 +1,36 @@
 header {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .resumer-header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tagline {
-    margin-top: -0.25rem;
+  margin-top: -0.25rem;
 }
 
 .location {
-    display: block;
-    margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 footer {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 
-    text-align: center;
-    font-size: 0.75rem;
+  text-align: center;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 768px) {
-    .resumer-header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .resumer-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .location {
-        margin-bottom: 1.5rem;
-    }
+  .location {
+    margin-bottom: 1.5rem;
+  }
 }

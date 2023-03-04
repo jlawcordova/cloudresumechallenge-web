@@ -7,10 +7,11 @@ export default function ViewCount() {
   const [viewCount, loading, error] = usePatchViewCount();
 
   const formatCompact = (i: number) => {
-    return new Intl.NumberFormat(
-      'en-US', {maximumSignificantDigits: 3, notation: "compact"}
-    ).format(i);
-  }
+    return new Intl.NumberFormat("en-US", {
+      maximumSignificantDigits: 3,
+      notation: "compact",
+    }).format(i);
+  };
 
   if (loading || viewCount == null) {
     return <div className="container view-count-container"></div>;
@@ -23,10 +24,8 @@ export default function ViewCount() {
   return (
     <div className="container view-count-container">
       <span>
-        <FontAwesomeIcon icon={faChartSimple}/>
-        <span className="view-count">
-          {formatCompact(viewCount)} views
-        </span>
+        <FontAwesomeIcon icon={faChartSimple} />
+        <span className="view-count">{formatCompact(viewCount)} views</span>
       </span>
     </div>
   );

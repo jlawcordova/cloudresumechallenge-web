@@ -1,4 +1,4 @@
-import './ResumeEntryHeading.css'
+import "./ResumeEntryHeading.css";
 import DateRange from "./DateRange";
 
 interface IResumeEntryHeading {
@@ -21,10 +21,7 @@ export default function ResumeEntryHeading({
         <h4>{subtitle}</h4>
       </hgroup>
       <div className="entry-subtitle">
-        <DateRange
-          startDate={startDate}
-          endDate={endDate}
-        />
+        <DateRange startDate={startDate} endDate={endDate} />
       </div>
     </div>
   );

@@ -1,15 +1,13 @@
 interface IResumeListProps {
-  items: string[]
+  items: string[];
 }
 
-export default function ResumeList({items} : IResumeListProps) {
+export default function ResumeList({ items }: IResumeListProps) {
   return (
     <ul>
-      { items.map((i: string) =>
-        <li key={ i }>
-          { i }
-        </li>)
-      }
+      {items.map((i: string) => (
+        <li key={i}>{i}</li>
+      ))}
     </ul>
   );
 }

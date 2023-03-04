@@ -6,12 +6,12 @@ interface ISkillsSectionProps {
   skills: ISkills;
 }
 
-export default function SkillsSection({skills}: ISkillsSectionProps) {
+export default function SkillsSection({ skills }: ISkillsSectionProps) {
   const skillsList = [
     "Languages — " + skills.languages.join(", "),
     "Frameworks and Libraries — " + skills.frameworks.join(", "),
     "Infrastructure and Tools — " + skills.tools.join(", "),
-  ]
+  ];
 
   return (
     <ResumeSection heading={"Technologies"}>

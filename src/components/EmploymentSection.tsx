@@ -5,15 +5,15 @@ import ResumeList from "./base/ResumeList";
 import ResumeSection from "./base/ResumeSection";
 
 interface IEmploymentSectionProps {
-  employment: IEmployment[]
+  employment: IEmployment[];
 }
 
 export default function EmploymentSection({
-  employment
+  employment,
 }: IEmploymentSectionProps) {
   return (
     <ResumeSection heading={"Employment"}>
-      { employment.map((e: IEmployment) => 
+      {employment.map((e: IEmployment) => (
         <ResumeEntry key={e.company + e.role}>
           <ResumeEntryHeading
             title={e.company}
@@ -23,7 +23,7 @@ export default function EmploymentSection({
           />
           <ResumeList items={e.contributions} />
         </ResumeEntry>
-      )}
+      ))}
     </ResumeSection>
   );
 }

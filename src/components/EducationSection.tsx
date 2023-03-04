@@ -8,10 +8,12 @@ interface IEducationSectionProps {
   education: IEducation[];
 }
 
-export default function EducationSection({education}: IEducationSectionProps) {
+export default function EducationSection({
+  education,
+}: IEducationSectionProps) {
   return (
     <ResumeSection heading={"Education"}>
-      { education.map((e: IEducation) => 
+      {education.map((e: IEducation) => (
         <ResumeEntry key={e.school}>
           <ResumeEntryHeading
             title={e.school}
@@ -21,7 +23,7 @@ export default function EducationSection({education}: IEducationSectionProps) {
           />
           <ResumeList items={[e.degree, e.honors]} />
         </ResumeEntry>
-      )}
+      ))}
     </ResumeSection>
   );
 }

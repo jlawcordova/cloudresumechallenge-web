@@ -1,15 +1,15 @@
-import './Resume.css'
+import "./Resume.css";
 import { IResume } from "../interfaces/IResume";
 import EducationSection from "./EducationSection";
 import EmploymentSection from "./EmploymentSection";
-import ProfileLinks from './ProfileLinks';
-import SkillsSection from './SkillsSection';
+import ProfileLinks from "./ProfileLinks";
+import SkillsSection from "./SkillsSection";
 
 interface IResumeProps {
   resume: IResume;
 }
 
-export default function Resume({resume}: IResumeProps) {
+export default function Resume({ resume }: IResumeProps) {
   return (
     <>
       <header className="container resumer-header">
@@ -27,11 +27,11 @@ export default function Resume({resume}: IResumeProps) {
       <main className="container">
         <EmploymentSection employment={resume.employment}></EmploymentSection>
         <EducationSection education={resume.education}></EducationSection>
-        <SkillsSection skills={resume.skills}/>
+        <SkillsSection skills={resume.skills} />
       </main>
       <footer className="container">
-                Copyright © { new Date().getFullYear()} jlawcordova. <br/>
-                All Rights Reserved.
+        Copyright © {new Date().getFullYear()} jlawcordova. <br />
+        All Rights Reserved.
       </footer>
     </>
   );
