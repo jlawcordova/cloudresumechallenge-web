@@ -8,7 +8,9 @@ interface IEmploymentSectionProps {
   employment: IEmployment[]
 }
 
-export default function EmploymentSection({employment}: IEmploymentSectionProps) {
+export default function EmploymentSection({
+  employment
+}: IEmploymentSectionProps) {
   return (
     <ResumeSection heading={"Employment"}>
       { employment.map((e: IEmployment) => 

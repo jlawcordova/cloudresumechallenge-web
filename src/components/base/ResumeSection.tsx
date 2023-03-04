@@ -5,7 +5,10 @@ interface IResumeSectionProps {
     children?: ReactNode;
 }
 
-export default function ResumeSection({heading, children}: IResumeSectionProps) {
+export default function ResumeSection({
+  heading,
+  children
+}: IResumeSectionProps) {
   return (
     <section>
       <h2>{heading}</h2>

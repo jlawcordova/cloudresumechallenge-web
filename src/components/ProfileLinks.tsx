@@ -9,7 +9,11 @@ interface IProfileLinksProps {
   linkedin: string;
 }
 
-export default function ProfileLinks({website, github, linkedin}: IProfileLinksProps) {
+export default function ProfileLinks({
+  website,
+  github,
+  linkedin
+}: IProfileLinksProps) {
   return (
     <div className="profile-links">
       <span>
