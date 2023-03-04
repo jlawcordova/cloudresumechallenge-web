@@ -10,6 +10,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     indent: ["error", 2],
+    'max-len': ["error", { "code": 80 }],
   },
   root: true,
   settings: {
