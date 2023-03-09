@@ -1,6 +1,7 @@
 {
-  "name": "resume-jlawcordova",
-  "version": "0.1.0",
+  "name": "cloudresumechallenge-web",
+  "version": "1.0.0",
+  "description": "This React project is a static web app for showing [J. Law. Cordova's](https://github.com/jlawcordova) resume. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This is part of [The Cloud Resume Challenge (AWS Edition)](https://cloudresumechallenge.dev/docs/the-challenge/aws/) and covers steps 2 (HTML), 3 (CSS) and 7 (Javascript).",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
@@ -27,6 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "author": "J. Law. Cordova",
+  "license": "ISC",
   "eslintConfig": {
     "extends": [
       "react-app",
